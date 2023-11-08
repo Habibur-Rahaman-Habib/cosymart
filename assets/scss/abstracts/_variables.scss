@@ -1,0 +1,29 @@
+// variable
+:root {
+  --font-body: "Inter", sans-serif;
+  --font-heading: "Metropolis";
+  --font-lora: "Lora", serif;
+  --font-oleo-script: "Oleo Script", cursive;
+
+  --color-main: #ffb300;
+  --color-primary: #ff9052;
+  --color-primary-2: #e93538;
+  --color-primary3: #fc722d;
+  --color-meat: #e93436;
+
+  --color-primary-rgb: 255, 144, 82;
+  --color-heading: #121328;
+  --color-dark: #121328;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-default: #616161;
+  --color-gray: #edf3f5;
+  --easing: cubic-bezier(0.25, 0.7, 0.58, 1);
+  // devHaib code
+  --primary-color: #f04639;
+  --secondary-color: #030525;
+  --transition: all 0.3s ease-in;
+  --light-purple: #fff4f3;
+  --gray_bg: #f5f5f5;
+  --header_bg: #161714;
+}

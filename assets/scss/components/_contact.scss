@@ -1,0 +1,145 @@
+/*----------------------------------------*/
+/*  22. contact
+/*----------------------------------------*/
+.contact-from {
+    padding: 35px 30px;
+    background-color: var(--color-white);
+    @include card-shadow;
+    @include border-radius(8px);
+    .xb-item {
+        &--field {
+            margin-bottom: 20px;
+            label {
+                font-size: 15px;
+                font-weight: 500;
+                color: #121328;
+                margin-bottom: 7px;
+            }
+            input,
+            textarea {
+                &:focus {
+                    border-color: var(--color-main);
+                }
+            }
+            textarea {
+                min-height: 134px;
+            }
+        }
+    }
+    .thm-btn {
+        color: var(--color-white);
+        box-shadow: none;
+    }
+}
+.xb-contact-info {
+    padding: 48px 34px;
+    @include border-radius(8px);
+    .xb-item {
+        &--title {
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+        &--info {
+            color: #595959;
+        }
+    }
+}
+.xb-contact-social {
+    h3 {
+        font-size: 18px;
+        padding-left: 87px;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 16px;
+        &::before {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            left: 0;
+            width: 76px;
+            height: 2px;
+            content: "";
+            background-color: var(--color-main);
+        }
+    }
+    ul {
+        @include respond(md) {
+            justify-content: start;
+        }
+        li {
+            &:not(:last-child) {
+                margin-right: 16px;
+            }
+            a {
+                width: 48px;
+                height: 48px;
+                border: 1px solid #E9E9E9;
+                @include border-radius(4px);
+                display: inline-block;
+                @include center;
+                font-size: 18px;
+                color: #121328;
+                &:hover {
+                    background-color: var(--color-main);
+                    border-color: var(--color-main);
+                }
+            }
+        }
+    }
+}
+.google-map {
+    position: relative;
+    &__inner {
+        height: 626px;
+        @include respond(laptop) {
+            height: 400px;
+        }
+        @include respond(lg) {
+            height: 500px;
+        }
+        iframe {
+            height: 100%;
+            width: 100%;
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+        }
+    }
+}
+.xb-contact-info2 {
+    padding: 40px 24px;
+    padding-right: 40px;
+    @include card-shadow;
+    @include border-radius(8px);
+    background-color: var(--color-white);
+    .xb-item {
+        &--title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 16px;
+            padding-left: 64px;
+            &::before {
+                position: absolute;
+                top: 50%;
+                @include transform(translateY(-50%));
+                left: 0;
+                width: 52px;
+                height: 2px;
+                content: "";
+                background-color: var(--color-main);
+            }
+        }
+    }
+    p {
+        strong {
+            color: var(--color-heading);
+        }
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+}
+.contact-info-wrap {
+    position: relative;
+    z-index: 2;
+}

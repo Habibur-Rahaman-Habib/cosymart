@@ -1,0 +1,37 @@
+/*----------------------------------------*/
+/*  14. newsletter
+/*----------------------------------------*/
+.xb-newsletter {
+    &__img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        @include respond(md) {
+            display: none;
+        }
+    }
+    &__holder {
+        padding: 52px 40px;
+    }
+}
+.xb-newsletter2 {
+    position: relative;
+    max-width: 500px;
+    input {
+        height: 64px;
+        @include placeholder(#BFBFBF);
+        color: #121328;
+        @include border-radius(8px);
+    }
+    button {
+        position: absolute;
+        right: 11px;
+        top: 11px;
+        background-color: var(--color-main);
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--color-black);
+        @include border-radius(4px);
+        padding: 8px 20px;
+    }
+}

@@ -1,0 +1,199 @@
+/*----------------------------------------*/
+/*  24. checkout
+/*----------------------------------------*/
+.checkout-order-wrap {
+    background-color: var(--color-white);
+    padding: 32px 26px;
+    @include border-radius(8px);
+    @include card-shadow;
+}
+
+
+.checkout-order {
+    li {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+        &:first-child {
+            color: #595959;
+            h4 {
+                font-size: 14px;
+                color: currentColor;
+            }
+        }
+        span {
+
+        }
+        .holder {
+            width: 255px;
+            display: flex;
+            align-items: center;
+            .thumb {
+                width: 40px;
+                height: 40px;
+                @include border-radius(4px);border: 1px solid #F0F0F0;
+                margin-right: 15px;
+            }
+            h3 {
+                font-size: 14px;
+                font-weight: 500;
+                width: calc(100% - 55px);
+            }
+        }
+    }
+}
+.checkout-order-info {
+    margin-top: 30px;
+    border-top: 1px solid #F5F5F5;
+    padding-top: 15px;
+    li {
+        font-size: 14px;
+        color: #595959;
+        font-weight: 600;
+        margin-bottom: 15px !important;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #F5F5F5;
+        span {
+            font-size: 16px;
+        }
+        .price {
+            font-size: 18px;
+            color: #121328;
+            font-weight: 700;
+        }
+    }
+}
+.checkout-flat {
+    padding-right: 28px;
+    position: relative;
+    li {
+        border: 0;
+        padding: 0;
+        margin: 0 !important;
+        position: relative;
+        padding-left: 9px;
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            @include transform(translateY(-50%));
+            width: 5px;
+            height: 5px;
+            background-color: #454545;
+            @include border-radius(50%);
+            content: "";
+        }
+    }
+    &::before,
+    &::after {
+        position: absolute;
+        top: 7px;
+        right: 0;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #000000;
+        @include border-radius(50%);
+        content: "";
+    }
+    &::after {
+        width: 8px;
+        height: 8px;
+        background-color: var(--color-main);
+        border: 0;
+        top: 11px;
+        right: 4px;
+    }
+}
+
+.checkout-radio-buttons {
+    display: flex;
+    flex-direction: column;
+    color: #121328;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .checkout-radio-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .checkout-radio-button input[type="radio"] {
+    display: none;
+  }
+  
+  .checkout-radio-circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  .checkout-radio-circle::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .checkout-radio-button input[type="radio"]:checked + .checkout-radio-circle::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .checkout-radio-button input[type="radio"]:checked + .checkout-radio-circle::before {
+    background-color: var(--color-main);
+  }
+
+  .radio-label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .payment_box {
+    font-size: 14px;
+    color: #595959;
+    line-height: 20px;
+    margin-bottom: 14px;
+    letter-spacing: -0.14px;
+    font-weight: 400;
+  }
+  .checkout-checkbox {
+    display: flex;
+    align-items: center;
+    input {
+        width: 20px !important;
+        height: 17px !important;
+        margin-right: 10px;
+    }
+    label {
+        font-size: 15px;
+        color: #121328;
+        font-weight: 500;
+        a {
+            color: #E93538;
+        }
+    }
+
+  }
+  .checkout-btn {
+    margin-top: 30px;
+    a {
+        width: 100%;
+        text-align: center;
+        box-shadow: none;
+    }
+  }

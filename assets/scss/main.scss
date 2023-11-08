@@ -1,0 +1,72 @@
+/*-----------------------------------------------------------------------------------
+
+    Project Name: CosyMart - WooCommerce HTML Template
+    Author: itechtheme -->> (https://themeforest.net/user/itechtheme)
+    Support: mailto:itechtheme@gmail.com 
+    Description: CosyMart - WooCommerce HTML Template
+    Developer: Mohammad Wasim Mia -> wasimmia.info@gmail.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+
+	01. Theme default CSS
+    02. header
+    03. global
+    04. category
+    05. banner
+    06. feature
+    06. feature
+    07. product
+    08. about
+    09. testimonial
+    10. discount
+    11. blog
+    12. brand
+    13. apps
+    14. newsletter
+    15. slider
+    16. team
+    17. faq
+    18. sidebar
+    19. preloader
+    20. backtotop
+    21. breadcrumb
+    22. contact
+    23. compare
+    24. checkout
+    25. mobile-menu
+    26. cart
+    27. 404
+    28. search
+    29. sec-title
+    30. footer
+    
+
+-----------------------------------------------------------------------------------*/
+// abstracts scss
+@import "abstracts/variables", "abstracts/mixins";
+
+// base scss
+@import "base/fonts", "base/base", "base/spacing", "base/typography",
+  "base/animation", "base/overlay";
+
+// layout scss
+@import "layout/header", "layout/navigation";
+
+// components scss
+@import "components/buttons", "components/global", "components/category",
+  "components/banner", "components/feature", "components/product",
+  "components/about", "components/testimonial", "components/discount",
+  "components/blog", "components/brand", "components/apps",
+  "components/newsletter", "components/slider", "components/team",
+  "components/faq", "components/sidebar", "components/preloader",
+  "components/backtotop", "components/breadcrumb", "components/contact",
+  "components/compare", "components/checkout", "components/mobile-menu",
+  "components/cart", "components/404", "components/search", "components/index_3",
+  "components/sec-title", "components/index_2";
+
+// layout scss
+@import "layout/footer";

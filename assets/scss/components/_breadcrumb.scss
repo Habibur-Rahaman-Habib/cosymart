@@ -1,0 +1,55 @@
+/*----------------------------------------*/
+/*  21. breadcrumb
+/*----------------------------------------*/
+.breadcrumb {
+    margin: 0;
+    &__content {
+        position: relative;
+        padding-bottom: 10px;
+        &::before {
+            background-image: url(../img/shape/br_line.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            content: "";
+        }
+    }
+    .bread-crumb {
+        .breadcrumb-item {
+            color: #121328;
+            font-size: 16px;
+            font-weight: 700;
+            position: relative;
+            &:not(:first-child) {
+                padding-left: 10px;
+                &::before {
+                    content: "\f054";
+                    font-family: "Font Awesome 5 Pro";
+                    font-weight: 400;
+                    left: 0px;
+                    position: relative;
+                    font-size: 13px;
+                }
+            }
+            a {
+                color: #616161;
+                display: flex;
+                align-items: center;
+                img {
+                    margin-right: 4px;
+                }
+                &:hover {
+                    color: #121328;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

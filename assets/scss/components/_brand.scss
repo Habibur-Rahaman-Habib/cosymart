@@ -1,0 +1,17 @@
+/*----------------------------------------*/
+/*  12. brand
+/*----------------------------------------*/
+.xb-brand1 {
+    .xb-item {
+        &--inner {
+            padding: 20px;
+        }
+        &--icon {
+            background-color: #F5F5F5;
+            margin: 0 auto 10px;
+        }
+        &--title {
+            font-size: 14px;
+        }
+    }
+}

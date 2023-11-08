@@ -1,0 +1,66 @@
+/*----------------------------------------*/
+/*  13. apps
+/*----------------------------------------*/
+.xb-app {
+    margin: -16px;
+    @include respond(lg) {
+        margin: -7px;
+    }
+    &__wrap {
+        margin-top: -155px;
+    }
+    &__inner {
+        background-color: var(--color-white);
+        padding: 64px 32px;
+        box-shadow: 4px 4px 16px 0px rgba(120, 120, 120, 0.08);
+        @include border-radius(8px);
+        &.meat-app {
+            background: none;
+            box-shadow: none;
+            padding: 90px 40px;
+            .xb-app__item {
+                &:hover {
+                    background-color: var(--color-meat);
+                }
+            }
+        }
+    }
+    &__item {
+        background-color: #121328;
+        margin: 16px;
+        display: flex;
+        align-items: center;
+        @include border-radius(4px);
+        padding: 10px 24px 13px;
+        @include transition(.3s var(--easing));
+        @include respond(lg) {
+            margin: 7px;
+            padding: 7px 15px 13px;
+        }
+        &:hover {
+            background-color: var(--color-main);
+        }
+        .xb-item {
+            &--icon {
+                margin-right: 8px;
+                width: 26px;
+            }
+            &--holder {
+                width: calc(100% - 32px);
+                line-height: 22px;
+                span {
+                    font-weight: 500;
+                    font-size: 12px;
+                    color: var(--color-white);
+                }
+                h4 {
+                    font-size: 16px;
+                    color: var(--color-white);
+                    letter-spacing: 0;
+                    font-weight: 500;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}

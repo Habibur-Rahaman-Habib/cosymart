@@ -1,0 +1,122 @@
+/* reset css start */
+:root {
+  scroll-behavior: auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  position: relative;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-default);
+  background-color: #fafafa;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  cursor: pointer;
+}
+
+*:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  @include transition(0.3s);
+}
+
+button:focus {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  @include transition(0.3s);
+  &:hover {
+    color: inherit;
+  }
+}
+select {
+  height: 55px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-position: calc(100% - 16px) 50%;
+  background-repeat: no-repeat;
+  padding-right: 20px;
+  background-color: transparent;
+  background-image: url(../img/icon/select-arrow.png);
+  border: 0;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+form select,
+textarea {
+  width: 100%;
+  height: 56px;
+  border-radius: 0;
+  padding: 0;
+  border: 0;
+  @include transition(0.3s);
+  color: var(--color-black);
+  @include border-radius(6px);
+
+  font-weight: 400;
+  border: 1px solid #e6e8e9;
+  padding: 16px;
+  @include placeholder(#dbdcdf);
+}
+textarea {
+  height: 100px;
+}
+button {
+  border: 0;
+}
+// span
+//   display: inline-block
+table {
+  width: 100%;
+}
+
+p,
+li,
+span {
+  margin-bottom: 0;
+}
+.img {
+  overflow: hidden;
+}
+.img img {
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+}
+.img img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.gray_bg {
+  background: var(--gray_bg);
+}
+.red_color {
+  color: var(--primary-color);
+}
+/* reset css end */

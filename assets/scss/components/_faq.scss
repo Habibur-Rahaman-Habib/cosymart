@@ -1,0 +1,191 @@
+/*----------------------------------------*/
+/*  17. faq
+/*----------------------------------------*/
+.accordion_box {
+	position: relative;
+}
+.accordion_box .block {
+	position: relative;
+	overflow: hidden;
+    margin-bottom: 16px;
+    background-color: var(--color-white);
+}
+.accordion_box .block:last-child {
+	margin-bottom: 0;
+}
+.accordion_box .block .acc-btn {
+	color: var(--color-heading);
+	position: relative;
+	font-weight: 700;
+	font-size: 20px;
+	cursor: pointer;
+	padding: 23px 24px;
+    padding-right: 50px;
+    @include respond(all 500ms ease);
+    .arrow {
+        position: absolute;
+        right: 16px;
+        top: 24px;
+        width: 20px;
+        height: 20px;
+        @include border-radius(50%);
+        background-color: #fff;
+        border: 1.5px solid #001042;
+        @include transition(.5s);
+        &::before {
+            top: -5px;
+            left: 5px;
+            color: var(--color-dark);
+            content: "\f067";
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 500;
+            position: absolute;
+            @include transition(0.6s cubic-bezier(0.165, 0.84, 0.44, 1));   
+            font-size: 11px;
+        }
+    }
+}
+.accordion_box .block.active-block .acc-btn {
+    color: var(--color-main);
+}
+.accordion_box .block.active-block .acc-btn .arrow {
+    border-color: var(--color-main);
+}
+.accordion_box .block.active-block .acc-btn .arrow::before {
+	content: "\f068";
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+    top: -3px;
+    color: var(--color-main);
+}
+.accordion_box .block .acc-btn span {
+    display: block;
+    font-size: 14px;
+    color: #B3B3C0;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.accordion_box .block .content {
+	position: relative;
+    padding: 0 24px;
+    padding-bottom: 24px;
+    p {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    ul {
+        list-style: none;
+        li {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+            i {
+                margin-right: 10px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+.accordion_box .block .acc_body {
+	position: relative;
+	display: none;
+}
+.accordion_box .block .acc_body.current {
+	display: block;
+}
+.xb-faq2 {
+    padding: 0;
+    .accordion_box {
+        .block {
+            @include border-radius(0);
+            border-style: dashed;
+            border-color: #CDCECF;
+            margin: 0;
+            margin-top: -1px;
+            .acc-btn {
+                padding: 32px 40px;
+                padding-right: 100px;
+                font-size: 24px;
+                color: #110F10;
+                background-color: var(--color-white);
+                @include respond(xs) {
+                    padding: 25px;
+                    padding-right: 70px;
+                    font-size: 18px;
+                }
+                .arrow {
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid #F6F6F6;
+                    box-shadow: none;
+                    top: 31px;
+                    right: 38px;
+                    z-index: 1;
+                    @include respond(xs) {
+                        right: 25px;
+                    }
+                    &::before {
+                        top: 0px;
+                        left: 10px;
+                        font-size: 14px;
+                    }
+                    &::after {
+                        @include before;
+                        background:var(--color-gradient);
+                        z-index: -1;
+                        @include border-radius(50%);
+                        @include transition(.3s);
+                        opacity: 0;
+                    }
+                }
+            }
+            &.active-block {
+                .acc-btn .arrow {
+                    &::before {
+                        color: var(--color-white);
+                    }
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
+            .content {
+                padding: 35px 40px;
+                padding-right: 100px;
+                font-size: 18px;
+                line-height: 28px;
+                @include respond(xs) {
+                    padding: 25px;
+                }
+            }
+        }
+    }
+}
+.faq-shape {
+    .shape {
+        position: absolute;
+        &--1 {
+            top: 11%;
+            left: 4%;
+            @include respond(laptop) {
+                top: 5%;
+                left: 3%;
+            }
+            @include respond(lg) {
+                top: 4%;
+            }
+        }
+        &--2 {
+            right: 3%;
+            top: 13%;
+            @include respond(laptop) {
+                right: 3%;
+                top: 7%;
+            }
+        }
+    }
+}
