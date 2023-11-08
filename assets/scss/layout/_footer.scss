@@ -339,6 +339,11 @@
 
 .footer_page_link {
   li {
+    &:hover {
+      a {
+        color: var(--primary-color);
+      }
+    }
     a {
       color: white;
     }

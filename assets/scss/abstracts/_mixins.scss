@@ -1,9 +1,9 @@
-@mixin background($position: center,$size: cover,$repeat: no-repeat) {
-    background: {
-        position: $position;
-        repeat: $repeat;
-        size: $size;
-    }
+@mixin background($position: center, $size: cover, $repeat: no-repeat) {
+  background: {
+    position: $position;
+    repeat: $repeat;
+    size: $size;
+  }
 }
 @mixin transform($property) {
   -webkit-transform: $property;
@@ -30,10 +30,11 @@
   -ms-flex: 0 0 $property;
   max-width: $property;
 }
+
 @mixin center {
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
 @mixin d-flex {
@@ -81,31 +82,30 @@
   height: 100%;
 }
 
-
 @mixin respond($breakpoint) {
-    @if $breakpoint==laptop {
-        @media only screen and (min-width: 1200px) and (max-width: 1500px) {
-            @content;
-        }
+  @if $breakpoint==laptop {
+    @media only screen and (min-width: 1200px) and (max-width: 1500px) {
+      @content;
     }
-    @if $breakpoint==lg {
-        @media (max-width: 1199px) {
-            @content;
-        }
+  }
+  @if $breakpoint==lg {
+    @media (max-width: 1199px) {
+      @content;
     }
-    @if $breakpoint==md {
-        @media (max-width: 991px) {
-            @content;
-        }
+  }
+  @if $breakpoint==md {
+    @media (max-width: 991px) {
+      @content;
     }
-    @if $breakpoint==xs {
-        @media (max-width: 767px) {
-            @content;
-        }
+  }
+  @if $breakpoint==xs {
+    @media (max-width: 767px) {
+      @content;
     }
-    @if $breakpoint==sm {
-        @media only screen and (min-width: 576px) and (max-width: 767px) {
-            @content;
-        }
+  }
+  @if $breakpoint==sm {
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+      @content;
     }
+  }
 }

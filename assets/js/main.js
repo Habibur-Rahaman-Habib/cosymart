@@ -631,7 +631,7 @@
 		roundLengths: true,
 		loop: true,
 		centeredSlides: true,
-		loopAdditionalSlides: 30,
+		// loopAdditionalSlides: 30,
 		watchSlidesVisibility: true,
 		slideVisibleClass: 'swiper-slide-visible',
 		autoplay: {
@@ -643,7 +643,7 @@
 		},
 		speed: 400,
 		breakpoints: {
-			'1600': {
+			'1750': {
 				slidesPerView: 4,
 			},
 			'1200': {
