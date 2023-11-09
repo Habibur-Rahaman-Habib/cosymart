@@ -704,3 +704,29 @@
 .btn_video {
   background-color: var(--primary-color);
 }
+
+.xb_production3 {
+  .xb-on-sale {
+    left: 35px !important;
+    top: 35px !important;
+  }
+}
+
+.pagi {
+  ul {
+    justify-content: center;
+    gap: 5px;
+    li {
+      a {
+        &:hover {
+          background: var(--primary-color) !important;
+          color: white;
+        }
+        &.current_page {
+          background: var(--primary-color) !important;
+          color: white;
+        }
+      }
+    }
+  }
+}

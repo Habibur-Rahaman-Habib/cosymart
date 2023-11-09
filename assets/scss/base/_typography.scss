@@ -35,5 +35,25 @@ h5 {
 h6 {
   font-size: 16px;
 }
+.fw-5 {
+  font-weight: 500;
+}
+
+.paste_bg {
+  background: var(--primary-color) !important;
+  transition: var(--transition);
+  &:hover {
+    background: var(--secondary-color) !important;
+  }
+}
+.black_bg {
+  background: var(--secondary-color) !important;
+  transition: var(--transition);
+  color: white;
+  &:hover {
+    background: var(--primary-color) !important;
+    color: white;
+  }
+}
 
 /* typography css end */
