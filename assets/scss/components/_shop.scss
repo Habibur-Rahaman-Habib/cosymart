@@ -1,35 +1,3 @@
-.mybread {
-  padding-top: 250px;
-  padding-bottom: 100px;
-  background: var(--light-purple);
-  @media (max-width: 767px) {
-    padding-top: 165px;
-    padding-bottom: 70px;
-    background: var(--light-purple);
-  }
-  .breadcrumb__content {
-    h1 {
-      font-weight: 800;
-      color: var(--secondary-color);
-      margin-bottom: 8px;
-    }
-    &::before {
-      display: none;
-    }
-    ul {
-      li {
-        a {
-          color: var(--secondary-color) !important;
-          font-weight: 700;
-        }
-        &.active {
-          font-weight: 800;
-        }
-      }
-    }
-  }
-}
-
 .show12 {
   color: var(--secondary-color) !important;
 }
@@ -329,4 +297,19 @@
       }
     }
   }
+}
+
+.xb-product3 .xb-item--badge {
+  z-index: 3;
+}
+
+.cart__content--title a {
+  transition: var(--transition);
+  &:hover {
+    color: var(--color-main);
+  }
+}
+
+.cart {
+  padding-bottom: 270px;
 }

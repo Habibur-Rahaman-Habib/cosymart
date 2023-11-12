@@ -459,7 +459,7 @@
 @media (max-width: 500px) {
   .clock {
     justify-content: space-between;
-    gap: 10px;
+    gap: 11px;
     li {
       h1 {
         font-size: 40px;
@@ -538,6 +538,67 @@
 
 // nav slider
 
+.tab-content.position-relative {
+  .tab-pane {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: block !important;
+    opacity: 0;
+    visibility: hidden;
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.nav_slider_wrap1 {
+  background: white;
+  padding: 50px 40px;
+  position: relative;
+  margin-top: -335px;
+  padding-right: 130px;
+  height: 715px;
+  @media (max-width: 1857px) {
+    padding-right: 125px;
+  }
+  @media (max-width: 1742px) {
+    margin-top: -245px;
+  }
+  @media (max-width: 1558px) {
+    margin-top: -180px;
+  }
+  @media (max-width: 1399px) {
+    margin-top: 0px;
+  }
+  @media (max-width: 1446px) {
+    padding-right: 30px;
+  }
+  @media (max-width: 365px) {
+    padding-right: 30px;
+    padding: 30px 20px;
+  }
+  .nav-tabs {
+    border-bottom: none;
+    justify-content: end;
+    .nav-link {
+      border: none;
+      color: #030525;
+      font-size: 16px;
+      font-weight: 700;
+      padding-left: 0;
+      padding-right: 0;
+      margin: 0 10px;
+      &.active {
+        color: var(--primary-color);
+        border-bottom: 2px solid var(--primary-color);
+      }
+    }
+  }
+}
+
 .nav_tab {
   li {
     color: #030525;
@@ -559,6 +620,11 @@
     @media (max-width: 1750px) {
       margin-left: 0;
     }
+    @media (max-width: 767px) {
+      .swiper-slide {
+        justify-content: center;
+      }
+    }
   }
   .swiper-pagination {
     bottom: 0px;
@@ -573,6 +639,36 @@
   .xb-product {
     .xb-item--img {
       background: #f1f1f1;
+    }
+  }
+}
+.img2 {
+  position: relative;
+  z-index: 2;
+  &::before {
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #030525c7;
+    z-index: 1;
+    position: absolute;
+    transition: 0.4s;
+    transform: scale(0);
+    border-radius: 5%;
+  }
+}
+.xb-item--action {
+  z-index: 3;
+}
+
+.xb-item--inner {
+  &:hover {
+    .img2 {
+      &::before {
+        transform: scale(1);
+      }
     }
   }
 }
@@ -728,5 +824,16 @@
         }
       }
     }
+  }
+}
+
+.original_bg {
+  @media (max-width: 1199px) {
+    margin-left: 0px !important;
+  }
+}
+.discout-product__nav {
+  @media (max-width: 517px) {
+    justify-content: center;
   }
 }

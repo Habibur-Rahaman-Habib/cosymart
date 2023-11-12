@@ -819,3 +819,8 @@
     }
   }
 }
+
+.megamenu-column ul li:hover > a::before,
+.megamenu-column ul li.active > a::before {
+  display: none;
+}

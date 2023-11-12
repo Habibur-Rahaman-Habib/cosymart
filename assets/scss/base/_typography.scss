@@ -12,6 +12,9 @@ h6 {
   font-family: var(--font-heading);
   letter-spacing: -0.5px;
 }
+ul {
+  list-style-type: none;
+}
 h1 {
   font-size: 48px;
 }
@@ -55,5 +58,14 @@ h6 {
     color: white;
   }
 }
+.position-inherit {
+  position: inherit !important;
+}
+.position-initial {
+  position: initial !important;
+}
 
+.pb-270 {
+  padding-bottom: 270px;
+}
 /* typography css end */

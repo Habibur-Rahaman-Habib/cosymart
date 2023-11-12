@@ -522,7 +522,7 @@
             <section class="breadcrumb  pt-40 pos-rel ">
                 <div class="container">
                     <div class="breadcrumb__content">
-                        <h1>Wishlist Page</h1>
+                        <h1>Customer Panel</h1>
                         <ul class="bread-crumb clearfix ul_li">
                             <li class="breadcrumb-item"><a href="index.html"><img src="assets/img/icon/home2.png"
                                         alt="">Home</a>
@@ -534,206 +534,149 @@
             </section>
             <!-- breadcrumb end -->
 
-            <!-- wishlist start -->
-            <section class="wishlist pt-120 pb-120">
+            <!-- customer panel start -->
+            <section class="pt-120 pb-270">
                 <div class="container">
-                    <div class="cart__table table-responsive">
-                        <table class="cart__table--inner">
-                            <thead class="cart__table--header">
-                                <tr class="cart__table--header__items">
-                                    <th class="cart__table--header__list">Product</th>
-                                    <th class="cart__table--header__list">Stock Status</th>
-                                    <th class="cart__table--header__list text-center">Quantity</th>
-                                    <th class="cart__table--header__list text-center">Unit Price</th>
-                                </tr>
-                            </thead>
-                            <tbody class="cart__table--body">
-                                <tr class="cart__table--body__items">
-                                    <td class="cart__table--body__list">
-                                        <div class="cart__product d-flex align-items-center">
-                                            <div class="cart__thumbnail img">
-                                                <a href="product-single.html"><img
-                                                        src="assets/img/product/product_01.png" alt="cart-product"></a>
-                                            </div>
-                                            <div class="cart__content">
-                                                <div class="xb-item--ratting ul_li">
-                                                    <ul class="xb-star-rating">
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="far fa-star"></i></li>
-                                                    </ul>
-                                                    <span class="reviews ml-8 text-12 font-medium">124k Reviews</span>
-                                                </div>
-                                                <h4 class="cart__content--title"><a href="product-single.html">Amazfit
-                                                        Gts-2 Cheetah Round Smart Watch</a></h4>
-                                            </div>
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-12 mb-5 mb-xxl-0 mb-xl-0 mb-lg-0">
+                            <div class="panel_left">
+                                <h5>Customer Panel</h5>
+                                <ul>
+                                    <li class="active">
+                                        <img src="assets/img/panel/home.png" alt=""> <span>Dashboard</span>
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/panel/p1.png" alt=""> <span>Personal Info</span>
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/panel/p2.png" alt=""> <span>Payment Method</span>
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/panel/p3.png" alt=""> <span> Order</span>
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/panel/p4.png" alt=""> <span>Wishlist</span>
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/panel/p5.png" alt=""> <span> Address</span>
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/panel/p6.png" alt=""> <span> Reviews</span>
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/panel/p7.png" alt=""> <span> Change Password</span>
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/panel/p8.png" alt=""> <span> Support Ticket</span>
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/panel/p9.png" alt=""> <span> Logout</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9  col-12">
+                            <div class="panel_name d-flex flex-wrap align-items-center">
+                                <div>
+                                    <h6>Hello, Sheridan</h6>
+                                    <h2>Welcome to your Profile</h2>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">Switch
+                                        Dashboard</label>
+                                    <input class="form-check-input" type="checkbox" role="switch"
+                                        id="flexSwitchCheckDefault">
+
+                                </div>
+                            </div>
+                            <div class="row order_number">
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4 mb-xxl-0 mb-xl-0 mb-lg-0">
+                                    <div class="order_item d-flex align-items-center gap-3">
+                                        <div class="g order_icon flex-shrink-1">
+                                            <img src="assets/img/panel/o1.png" alt="">
                                         </div>
-                                    </td>
-                                    <td class="cart__table--body__list">
-                                        <span class="wishlist-in-stock">In Stock</span>
-                                    </td>
-                                    <td class="cart__table--body__list text-center">
                                         <div>
-                                            <input class="product-count" type="text" value="1" name="product-count">
+                                            <h6>Total Order</h6>
+                                            <h2><span class="count">4</span>K+</h2>
                                         </div>
-                                    </td>
-                                    <td class="cart__table--body__list text-center">
-                                        <a class="wishlist-btn thm-btn thm-btn--black btn-hover-main"
-                                            href="product-single.html">Add to Cart</a>
-                                        <button class="cart__remove--btn ml-20" aria-label="search button"
-                                            type="button">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                viewBox="0 0 14 14" fill="none">
-                                                <path d="M1 13L13 1M1 1L13 13" stroke="#718096" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr class="cart__table--body__items">
-                                    <td class="cart__table--body__list">
-                                        <div class="cart__product d-flex align-items-center">
-                                            <div class="cart__thumbnail img">
-                                                <a href="product-single.html"><img
-                                                        src="assets/img/product/product_02.png" alt="cart-product"></a>
-                                            </div>
-                                            <div class="cart__content">
-                                                <div class="xb-item--ratting ul_li">
-                                                    <ul class="xb-star-rating">
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="far fa-star"></i></li>
-                                                    </ul>
-                                                    <span class="reviews ml-8 text-12 font-medium">124k Reviews</span>
-                                                </div>
-                                                <h4 class="cart__content--title"><a href="product-single.html">Amazfit
-                                                        Gts-2 Cheetah Round Smart Watch</a></h4>
-                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4 mb-xxl-0 mb-xl-0 mb-lg-0">
+                                    <div class="order_item d-flex align-items-center gap-3">
+                                        <div class="o order_icon flex-shrink-1">
+                                            <img src="assets/img/panel/o2.png" alt="">
                                         </div>
-                                    </td>
-                                    <td class="cart__table--body__list">
-                                        <span class="wishlist-in-stock">In Stock</span>
-                                    </td>
-                                    <td class="cart__table--body__list text-center">
                                         <div>
-                                            <input class="product-count" type="text" value="1" name="product-count">
+                                            <h6>Order Processing</h6>
+                                            <h2><span class="count">10</span>+</h2>
                                         </div>
-                                    </td>
-                                    <td class="cart__table--body__list text-center">
-                                        <a class="wishlist-btn thm-btn thm-btn--black btn-hover-main"
-                                            href="product-single.html">Add to Cart</a>
-                                        <button class="cart__remove--btn ml-20" aria-label="search button"
-                                            type="button">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                viewBox="0 0 14 14" fill="none">
-                                                <path d="M1 13L13 1M1 1L13 13" stroke="#718096" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr class="cart__table--body__items">
-                                    <td class="cart__table--body__list">
-                                        <div class="cart__product d-flex align-items-center">
-                                            <div class="cart__thumbnail img">
-                                                <a href="product-single.html"><img
-                                                        src="assets/img/product/product_03.png" alt="cart-product"></a>
-                                            </div>
-                                            <div class="cart__content">
-                                                <div class="xb-item--ratting ul_li">
-                                                    <ul class="xb-star-rating">
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="far fa-star"></i></li>
-                                                    </ul>
-                                                    <span class="reviews ml-8 text-12 font-medium">124k Reviews</span>
-                                                </div>
-                                                <h4 class="cart__content--title"><a href="product-single.html">Amazfit
-                                                        Gts-2 Cheetah Round Smart Watch</a></h4>
-                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+                                    <div class="order_item d-flex align-items-center gap-3">
+                                        <div class="b order_icon flex-shrink-1">
+                                            <img src="assets/img/panel/o3.png" alt="">
                                         </div>
-                                    </td>
-                                    <td class="cart__table--body__list">
-                                        <span class="wishlist-in-stock">In Stock</span>
-                                    </td>
-                                    <td class="cart__table--body__list text-center">
                                         <div>
-                                            <input class="product-count" type="text" value="1" name="product-count">
+                                            <h6>Total Delivered</h6>
+                                            <h2><span class="count">3.5</span>K+</h2>
                                         </div>
-                                    </td>
-                                    <td class="cart__table--body__list text-center">
-                                        <a class="wishlist-btn thm-btn thm-btn--black btn-hover-main"
-                                            href="product-single.html">Add to Cart</a>
-                                        <button class="cart__remove--btn ml-20" aria-label="search button"
-                                            type="button">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                viewBox="0 0 14 14" fill="none">
-                                                <path d="M1 13L13 1M1 1L13 13" stroke="#718096" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr class="cart__table--body__items">
-                                    <td class="cart__table--body__list">
-                                        <div class="cart__product d-flex align-items-center">
-                                            <div class="cart__thumbnail img">
-                                                <a href="product-single.html"><img
-                                                        src="assets/img/product/product_04.png" alt="cart-product"></a>
-                                            </div>
-                                            <div class="cart__content">
-                                                <div class="xb-item--ratting ul_li">
-                                                    <ul class="xb-star-rating">
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="fas fa-star"></i></li>
-                                                        <li><i class="far fa-star"></i></li>
-                                                    </ul>
-                                                    <span class="reviews ml-8 text-12 font-medium">124k Reviews</span>
-                                                </div>
-                                                <h4 class="cart__content--title"><a href="product-single.html">Amazfit
-                                                        Gts-2 Cheetah Round Smart Watch</a></h4>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="cart__table--body__list">
-                                        <span class="wishlist-in-stock">In Stock</span>
-                                    </td>
-                                    <td class="cart__table--body__list text-center">
-                                        <div>
-                                            <input class="product-count" type="text" value="1" name="product-count">
-                                        </div>
-                                    </td>
-                                    <td class="cart__table--body__list text-center">
-                                        <a class="wishlist-btn thm-btn thm-btn--black btn-hover-main"
-                                            href="product-single.html">Add to Cart</a>
-                                        <button class="cart__remove--btn ml-20" aria-label="search button"
-                                            type="button">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                viewBox="0 0 14 14" fill="none">
-                                                <path d="M1 13L13 1M1 1L13 13" stroke="#718096" stroke-width="2"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="xb-wishlist-bottom ul_li_right mt-25">
-                        <a class="clean-btn mt-10" href="#!">Clean Wishlist</a>
-                        <a class="thm-btn primary add-cart-all-btn mt-10" href="#!">Add to Cart All</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row order_info ms-1 me-1">
+                                <div class="col-xl-6 col-lg-6 col-12">
+                                    <div class="info_content">
+                                        <h3>Personal Information</h3>
+                                        <ul>
+                                            <li>
+                                                <p>Name :<span> Sheridan</span></p>
+                                            </li>
+                                            <li>
+                                                <p>Email :<span> itechsupport@gmail.com</span></p>
+                                            </li>
+                                            <li>
+                                                <p>Phone :<span> +880117546512</span></p>
+                                            </li>
+                                            <li>
+                                                <p>City :<span> Khulna, Bangladesh</span></p>
+                                            </li>
+                                            <li>
+                                                <p>Zip :<span> 1230</span></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-12">
+                                    <div class="info_content position-relative">
+                                        <img src="assets/img/panel/b.png" alt="">
+                                        <h3>Shop Info</h3>
+                                        <ul>
+                                            <li>
+                                                <p>Name :<span> Sheridan</span></p>
+                                            </li>
+                                            <li>
+                                                <p>Email :<span> itechsupport@gmail.com</span></p>
+                                            </li>
+                                            <li>
+                                                <p>Phone :<span> +880117546512</span></p>
+                                            </li>
+                                            <li>
+                                                <p>City :<span> Khulna, Bangladesh</span></p>
+                                            </li>
+                                            <li>
+                                                <p>Zip :<span> 1230</span></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </section>
-            <!-- wishlist end -->
+            <!-- customer panel end -->
 
         </main>
 
@@ -879,9 +822,11 @@
     <script src="assets/js/touchspin.js"></script>
     <script src="assets/js/jarallax.js"></script>
     <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/counterup.min.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/parallax-scroll.js"></script>
+    <script src="assets/js/waypoints.js"></script>
     <script src="assets/js/main.js"></script>
 
 </body>

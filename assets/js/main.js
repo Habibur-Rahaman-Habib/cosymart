@@ -564,6 +564,23 @@
 		},
 	});
 
+	// sidebar menu slider
+	var slider = new Swiper('.sidebar_menu_slider', {
+		spaceBetween: 24,
+		slidesPerView: 1,
+		roundLengths: true,
+		loop: true,
+		loopAdditionalSlides: 30,
+		watchSlidesVisibility: true,
+		slideVisibleClass: 'swiper-slide-visible',
+		autoplay: {
+			enabled: true,
+			delay: 6000
+		},
+		speed: 400,
+
+	});
+
 	// feature collection2
 	var slider = new Swiper('.feature_collection_slider', {
 		spaceBetween: 24,
