@@ -422,3 +422,21 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+
+// product quickview
+#product_quickview .modal-dialog {
+  max-width: 1300px;
+}
+#product_quickview .modal-dialog .modal-content {
+  padding: 32px;
+  position: relative;
+}
+
+#product_quickview .modal-dialog .modal-content .btn-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
