@@ -457,8 +457,9 @@
 		loop: true,
 		spaceBetween: 0,
 		effect: 'fade',
+		allowTouchMove: false,
 		autoplay: {
-			enabled: false,
+			enabled: true,
 			delay: 6000
 		},
 		pagination: {
@@ -791,6 +792,16 @@
 		});
 	});
 
+
+	$(document).on("mouseup", function (e) {
+		var catagorymenu = $(".header__category");
+
+		if (!catagorymenu.is(e.target) && catagorymenu.has(e.target).length === 0) {
+
+			$(".category-nav__list").slideUp();
+		}
+
+	});
 
 
 

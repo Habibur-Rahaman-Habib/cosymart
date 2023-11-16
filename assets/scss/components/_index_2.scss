@@ -70,6 +70,7 @@
     font-weight: 600;
     &:hover {
       background: var(--color-primary);
+      border-color: var(--color-primary);
     }
   }
 }
@@ -108,8 +109,9 @@
   &:hover {
     .banner_radious {
       &::before {
-        width: 100%;
-        height: 100%;
+        // width: 100%;
+        // height: 100%;
+        transform: scale(1);
       }
     }
   }
@@ -173,10 +175,13 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0%;
-    height: 0%;
+    width: 100%;
+    height: 100%;
     background: #0305257a;
     transition: 0.5s ease-in-out;
+    background-position: center center;
+    transform: scale(0.05);
+    border-radius: 15px;
   }
   .bg_shape {
     position: absolute;
@@ -299,9 +304,11 @@
   }
   .about_shape {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 0px;
+    top: 0px;
     z-index: 1;
+    width: 185px;
+    height: 177px;
   }
 }
 
@@ -453,20 +460,6 @@
   .xb-copyright-text {
     color: white !important;
   }
-}
-
-.img {
-  overflow: hidden;
-}
-.img img {
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
-  transition: var(--transition);
-}
-.img img:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
 }
 
 // feature collection

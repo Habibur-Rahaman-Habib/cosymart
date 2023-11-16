@@ -104,14 +104,10 @@ span {
   overflow: hidden;
 }
 .img img {
-  -webkit-transition: var(--transition);
-  -o-transition: var(--transition);
   transition: var(--transition);
 }
 .img img:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.04);
 }
 .gray_bg {
   background: var(--gray_bg);
