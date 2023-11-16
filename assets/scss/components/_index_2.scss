@@ -817,3 +817,13 @@
 .megamenu-column ul li.active > a::before {
   display: none;
 }
+
+p.text-18.leading-28.-tracking-0\/18 {
+  width: 500px;
+  margin-left: auto;
+  @media (max-width: 991px) {
+    margin-left: inherit;
+    margin-right: auto;
+    max-width: 100%;
+  }
+}

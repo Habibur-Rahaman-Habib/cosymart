@@ -64,4 +64,28 @@
 }
 .ptb-120 {
   padding: 120px 0;
+  @media (max-width: 991px) {
+    padding: 90px 0;
+  }
+  @media (max-width: 576px) {
+    padding: 60px 0;
+  }
+}
+.pt-120 {
+  padding-top: 120px;
+  @media (max-width: 991px) {
+    padding-top: 90px;
+  }
+  @media (max-width: 576px) {
+    padding-top: 60px;
+  }
+}
+.pb-120 {
+  padding-bottom: 120px;
+  @media (max-width: 991px) {
+    padding-bottom: 90px;
+  }
+  @media (max-width: 576px) {
+    padding-bottom: 60px;
+  }
 }

@@ -276,6 +276,9 @@
   }
   &__nav {
     border: 0;
+    @media (max-width: 576px) {
+      margin-left: 25px;
+    }
     .nav-item {
       margin-top: 12px;
       &:not(:last-child) {
@@ -492,6 +495,9 @@
 .xb-deal-swiper-arrow {
   position: absolute;
   top: 50%;
+  @media (max-width: 576px) {
+    top: 70%;
+  }
   @include transform(translateY(-50%));
   right: 16px;
   .xb-swiper-arrow {
@@ -533,6 +539,11 @@
   }
   .xb-deal-swiper-arrow {
     right: 0;
+    @media (max-width: 576px) {
+      right: 0;
+      bottom: -21px;
+      top: initial;
+    }
   }
 }
 .xb-product4 {
